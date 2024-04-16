@@ -38,8 +38,8 @@ const Flames=()=>{
     }
     return(
         <div style={{margin:100}}>
-            <input value={name1} data-testid="input1" onChange={(e)=>setName1(e.target.value)}/>
-            <input value={name2} data-testid="input2" onChange={(e)=>setName2(e.target.value)}/>
+            <input name="name1" value={name1} data-testid="input1" onChange={(e)=>setName1(e.target.value)}/>
+            <input  name="name2" value={name2} data-testid="input2" onChange={(e)=>setName2(e.target.value)}/>
             <button onClick={calculate} data-testid="calculate_relationship">calculate Relationship Future</button>
 <button onClick={clear} data-testid="clear">Clear</button>
 {relation&&<h3 data-testid="answer">{relation}</h3>}
